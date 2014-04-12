@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="vlaues_folder_name"> xxhdpi</string>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- ********* Home screen dimen *************** -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="heade_btn_Height">30dp</dimen>
+    <dimen name="home_btn_Height">190dp</dimen>
+    <dimen name="home_btn_Width">190dp</dimen>
+    <!-- text siezes -->
+    <dimen name="home_tv_textsize">24sp</dimen>
+    <!-- ********* Home screen dimen *************** -->
+
+</resources>

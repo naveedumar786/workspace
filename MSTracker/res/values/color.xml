@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="sperator_color">#bbbbbb</color>
+    <color name="blue">#bbbbbb</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="imageUploadDialog">#222832</color>
+    <color name="listTitleBackground">#BFBFBF</color>
+
+</resources>

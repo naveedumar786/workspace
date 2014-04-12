@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topMenu"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#f8f8f8" >
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/backbutton" />
+
+    <TextView
+        android:id="@+id/tvTopMenuTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/btnAdd"
+        android:layout_toRightOf="@+id/btnBack"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="@string/scheduleMenuTile"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/topMenuBorder"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tvTopMenuTitle"
+        android:layout_marginTop="10dp"
+        android:background="#bbbbbb" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/add_button" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDrugName" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tvName"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+            <!-- Date time picker -->
+
+            <TextView
+                android:id="@+id/tvDateDiagnose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etName"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtDateTime" />
+
+            <EditText
+                android:id="@+id/etDateDiagnose"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tvDateDiagnose"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="datetime"
+                android:padding="3dp"
+                android:singleLine="true" >
+            </EditText>
+            <!-- Reminder -->
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

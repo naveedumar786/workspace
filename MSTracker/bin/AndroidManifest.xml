@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="suave.ms.tracker"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="suave.ms.tracker.helper.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="suave.ms.tracker.MSTracker"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.MainActivity"
+            android:label="@string/lblMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.Login"
+            android:label="@string/lblLogin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.RegisterAccount"
+            android:label="@string/lblRegisterAccount"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.ForgetPassword"
+            android:label="@string/lblForgetPassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.MSTrackerHome"
+            android:label="@string/lblMSTrackerHome"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.Schedule"
+            android:label="@string/lblSchedule"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.ScheduleAppointment"
+            android:label="@string/lblScheduleAppointment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.ScheduleAppointmentUpdate"
+            android:label="@string/lblScheduleAppointmentUpdate"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.ScheduleAppointmentAdd"
+            android:label="@string/lblAddScheduleAppointment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- Treatment activities -->
+        <activity
+            android:name="suave.ms.tracker.Treatment"
+            android:label="@string/lblTreatment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.TreatmentMedication"
+            android:label="@string/lblTreatmentMedication"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.TreatmentMedicationOption"
+            android:label="@string/lblTreatmentMedicationOption"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.TreatmentDrugInformation"
+            android:label="@string/lblTreatmentDrugInformation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.TodayMedication"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.Diagnosis"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.DiagnosisUserDiagnosis"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.DiagnosisUserDiagnoseAdd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.Images"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.InjectionTracker"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.AboutMS"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.FutureAppointment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.MSResources"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="suave.ms.tracker.MSProfile"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2b2b"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/menuScroolView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/menuContentWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Row One Start -->
+
+            <LinearLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnSchedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/schedule_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvScheduleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnSchedule"
+                        android:text="@string/Schedule"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row One End -->
+            <!-- Row Two Start -->
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlDiagnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnDiagnosis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/diagnosis_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvDiagnosisText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnDiagnosis"
+                        android:text="@string/Diagnosis"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Two End -->
+            <!-- Row three Start -->
+
+            <LinearLayout
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlTreatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnTreatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/treatment_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvTreatmentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnTreatment"
+                        android:text="@string/Treatment"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Three End -->
+            <!-- Row Four Start -->
+
+            <LinearLayout
+                android:id="@+id/row4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnImages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/images_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvImagesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnImages"
+                        android:text="@string/Images"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Four End -->
+            <!-- Row Five Start -->
+
+            <LinearLayout
+                android:id="@+id/row5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlMsrelapesExacerbation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnMsrelapesExacerbation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ms_relapes_exacerbation_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvMsrelapesExacerbationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnMsrelapesExacerbation"
+                        android:text="@string/MS_Relapes"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Five End -->
+            <!-- Row Six Start -->
+
+            <LinearLayout
+                android:id="@+id/row6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlLabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnLabs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/labs_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvLabsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnLabs"
+                        android:text="@string/Labs"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Six End -->
+            <!-- Row Seven Start -->
+
+            <LinearLayout
+                android:id="@+id/row7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlMsProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnMsProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ms_profile_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvMsProfileText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnMsProfile"
+                        android:text="@string/MS_Profile"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Seven End -->
+            <!-- Row Eight Start -->
+
+            <LinearLayout
+                android:id="@+id/row8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlMsResources"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnMsResources"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ms_resources_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvMsResources"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnMsResources"
+                        android:gravity="center_horizontal"
+                        android:text="@string/MS_Resources_leftMenu"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Eight End -->
+            <!-- Row Nine Start -->
+
+            <LinearLayout
+                android:id="@+id/row9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlAboutMs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnAboutMs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/about_ms_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvAboutMs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnAboutMs"
+                        android:text="@string/About_Ms"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Nine End -->
+            <!-- Row Ten Start -->
+
+            <LinearLayout
+                android:id="@+id/row10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlInjectionTracker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnInjectionTracker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/injection_tracker_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvInjectionTracker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnInjectionTracker"
+                        android:text="@string/Injection_Tracker_leftMenu"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Ten End -->
+            <!-- Row Eleven Start -->
+
+            <LinearLayout
+                android:id="@+id/row11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlSymptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnSymptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/symptoms_s"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSymptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnSymptoms"
+                        android:text="@string/Symptoms"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Eleven End -->
+            <!-- Row 12 Start -->
+
+            <LinearLayout
+                android:id="@+id/row12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlLogout"
+                    android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/btnLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/logout"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btnLogout"
+                        android:text="@string/txtLogout"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/sparrater" />
+            </LinearLayout>
+
+            <!-- Row Two End -->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

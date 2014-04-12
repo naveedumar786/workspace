@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/topMenu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f8f8f8" >
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sidemenu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/app_title"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/topMenuBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/topMenu"
+        android:background="#bbbbbb" />
+
+    <ScrollView
+        android:id="@+id/menuScroolView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomMenu"
+        android:layout_below="@+id/topMenuBorder"
+        android:background="#fff" >
+
+        <LinearLayout
+            android:id="@+id/menuContentWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Row One Start -->
+
+            <LinearLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:baselineAligned="false" >
+
+                <RelativeLayout
+                    android:id="@+id/btnSchedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnScheduleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/Schedule" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnDiagnosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/diagnosis"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnDiagnosisText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/Diagnosis" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnTreatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/treatment"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnTreatmentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/Treatment" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Row One End -->
+            <!-- Row Two Start -->
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:baselineAligned="false" >
+
+                <RelativeLayout
+                    android:id="@+id/btnImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/images"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnImagesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/Images" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnMsrelapesExacerbation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ms_relapes_exacerbation"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnMsrelapesExacerbationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/MS_Relapes" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnLabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/labs"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnLabsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/Labs" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Row Two End -->
+            <!-- Row Three Start -->
+
+            <LinearLayout
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:baselineAligned="false" >
+
+                <RelativeLayout
+                    android:id="@+id/btnMsProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ms_profile"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnMsProfileText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/MS_Profile" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnMsResources"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ms_resources"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnMsResourcesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/MS_Resources" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnAboutMs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/about_ms"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnAboutMsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/About_Ms" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Row Three End -->
+            <!-- Row Four Start -->
+
+            <LinearLayout
+                android:id="@+id/row4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:baselineAligned="false" >
+
+                <RelativeLayout
+                    android:id="@+id/btnInjectionTracker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/injection_tracker"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnInjectionTrackerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Injection_Tracker" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnSymptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/symptoms"
+                    android:paddingBottom="8dp" >
+
+                    <TextView
+                        android:id="@+id/btnSymptomsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/Symptoms" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Row Two End -->
+        </LinearLayout>
+    </ScrollView>
+    <!-- Bottom menu start -->
+
+    <include
+        android:id="@+id/bottomMenu"
+        layout="@layout/bottom_menu" />
+    <!-- Bottom menu end -->
+
+</RelativeLayout>

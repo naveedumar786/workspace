@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topMenu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f8f8f8" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/backbutton" />
+
+        <TextView
+            android:id="@+id/topMenuTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnSave"
+            android:layout_toRightOf="@+id/btnBack"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/addScheduleAppointmentMenuTitle"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/save_button" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/topMenuBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/topMenu"
+        android:background="#bbbbbb" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomMenu"
+        android:layout_below="@+id/topMenuBorder" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" >
+
+            <!-- Drug Name -->
+
+            <TextView
+                android:id="@+id/tvDrugName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvDrugName" />
+
+            <EditText
+                android:id="@+id/etDrugName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvDrugName"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+
+            <!-- Dosage -->
+
+            <TextView
+                android:id="@+id/tvDosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDrugName"
+                android:layout_marginTop="8dp"
+                android:text="@string/tvDosage" />
+
+            <EditText
+                android:id="@+id/etDosage"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvDosage"
+                android:background="@drawable/rounded_edittext"
+                android:padding="3dp"
+                android:singleLine="true" >
+            </EditText>
+            <!-- Reminder -->
+
+            <TextView
+                android:id="@+id/tvIndication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDosage"
+                android:layout_marginTop="8dp"
+                android:text="@string/tvIndication" />
+
+            <EditText
+                android:id="@+id/etIndication"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvIndication"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+
+            <!-- StaffName -->
+
+            <TextView
+                android:id="@+id/tvReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etIndication"
+                android:layout_marginTop="8dp"
+                android:text="@string/tvReminder" />
+
+            <EditText
+                android:id="@+id/etReminder"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvReminder"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+
+            <!-- start date -->
+
+            <TextView
+                android:id="@+id/tvStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etReminder"
+                android:layout_marginTop="8dp"
+                android:text="@string/tvStartDate" />
+
+            <EditText
+                android:id="@+id/etStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvStartDate"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+
+            <!-- end date -->
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStartDate"
+                android:layout_marginTop="8dp"
+                android:text="@string/tvEndDate"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvEndDate"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp"
+                android:visibility="gone" >
+            </EditText>
+            <!-- start date -->
+
+            <TextView
+                android:id="@+id/tvMoreInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEndDate"
+                android:layout_marginTop="8dp"
+                android:text="@string/tvMoreInfo"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etMoreInfo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvMoreInfo"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp"
+                android:visibility="gone" >
+            </EditText>
+
+            <!-- end date -->
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottomMenu"
+        layout="@layout/bottom_menu" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+package com.example.apps;
+
+import com.example.classes.SwipeDetector;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.LinearLayout;
+
+public class GestureDemo extends ApplicationActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_gesture_demo);
+		
+		SwipeDetector swipe = new SwipeDetector(this);
+		LinearLayout swipe_layout = (LinearLayout) findViewById(R.id.swipe_layout);
+		swipe_layout.setOnTouchListener(swipe);
+	}
+
+	
+
+}

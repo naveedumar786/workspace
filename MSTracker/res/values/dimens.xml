@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <string name="vlaues_folder_name">values</string>
+    <!-- ********* Home screen dimen *************** -->
+    <dimen name="heade_btn_Height">30dp</dimen>
+    <dimen name="home_btn_Height">84dp</dimen>
+    <dimen name="home_btn_Width">84dp</dimen>
+    <!-- text siezes -->
+    <dimen name="home_tv_textsize">13sp</dimen>
+    <!-- ********* Home screen dimen *************** -->
+    <!-- list_view_row -->
+    <dimen name="row_padding">10dp</dimen>
+    <dimen name="tvText_marginRight">5dp</dimen>
+    <dimen name="tvText_padding">5dp</dimen>
+    <dimen name="tvText_textSize">18sp</dimen>
+    <dimen name="btnNext_marginRight">5dp</dimen>
+    <dimen name="template">0dp</dimen>
+
+    <!-- image_upload_dialog -->
+    <dimen name="tvSelectImage_height">20dp</dimen>
+    <dimen name="tvSelectImage_margin_top">5dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+    <dimen name="btn_width">180dp</dimen>
+    <dimen name="btn_marginTop">5dp</dimen>
+    <dimen name="template">0dp</dimen>
+    <dimen name="add_image_icon_width">40dp</dimen>
+
+    <!-- images images -->
+
+
+    <!-- injection tracker -->
+    <dimen name="seprator_height">2dp</dimen>
+    <dimen name="inj_width">320dp</dimen>
+    <dimen name="inj_arms_height">170dp</dimen>
+    <dimen name="inj_abdomen_height">115dp</dimen>
+    <dimen name="inj_thigh_height">95dp</dimen>
+    <dimen name="btnInj_width">75dp</dimen>
+    <dimen name="btnInj_height">50dp</dimen>
+    <dimen name="btnInj_textSize">13sp</dimen>
+    <dimen name="btnInj_padding">2dp</dimen>
+    <dimen name="Inj_padding">10dp</dimen>
+
+    <!-- injection tracker end -->
+    <dimen name="scroll_padding">5dp</dimen>
+
+</resources>

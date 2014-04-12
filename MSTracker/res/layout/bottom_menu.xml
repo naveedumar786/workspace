@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <RelativeLayout
+            android:id="@+id/btnHome"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/home"
+            android:onClick="launchOnClick"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/btnHomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Home"
+                android:textColor="#2d2d2d"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnTodayMedication"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/today_medication"
+            android:onClick="launchOnClick" >
+
+            <TextView
+                android:id="@+id/btnTodayMedicationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="@string/Today_Medication"
+                android:textColor="#2d2d2d"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnFutureAppointment"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/future_appoinments"
+            android:onClick="launchOnClick" >
+
+            <TextView
+                android:id="@+id/btnFutureAppointmentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="@string/Future_Appointment"
+                android:textColor="#2d2d2d"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnSettings"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/settings"
+            android:onClick="launchOnClick"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Settings"
+                android:textColor="#2d2d2d"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottomMenuBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomMenu"
+        android:background="#bbbbbb" />
+
+</RelativeLayout>

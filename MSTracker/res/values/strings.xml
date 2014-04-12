@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Login start -->
+    <string name="login_title">Login</string>
+    <string name="txtRecoverPassword">Recover Password</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtConfirmPassword">Confirm Password</string>
+    <string name="txtRememberMe">Remember Me</string>
+    <string name="txtLogin">Login</string>
+    <string name="txtRegisterd">Register</string>
+    <string name="txtForgetPassword">Forget Password</string>
+    <string name="txtAlreadyLogin">Already registred. Login Me!</string>
+    <string name="txtLogout">Logout</string>
+    <!-- Login end -->
+
+    <string name="app_name">MSTracker</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Manifest activites labels start -->
+    <string name="lblMSTrackerHome">MS Tracker Home</string>
+    <string name="lblMainActivity">MainActivity</string>
+    <string name="lblForgetPassword">ForgetPassword</string>
+    <string name="lblRegisterAccount">RegisterAccount</string>
+    <string name="lblLogin">Login</string>
+    <string name="lblSchedule">Schedule</string>
+    <string name="lblScheduleAppointment">Schedule Appointments</string>
+    <string name="lblScheduleAppointmentUpdate">Schedule Appointment Update</string>
+    <string name="lblAddScheduleAppointment">Add New Appointment</string>
+    <string name="lblTreatment">Treatment</string>
+    <string name="lblTreatmentMedication">Treatment Medication</string>
+    <string name="lblTreatmentMedicationOption">Medication Option</string>
+    <string name="lblTreatmentDrugInformation">Treatment Drug Information</string>
+
+    <!-- Manifest activites labels end -->
+
+
+    <!-- mstracker Home layout start -->
+    <string name="app_title">MS Tracker</string>
+    <string name="Schedule">Schedule</string>
+    <string name="Diagnosis">Diagnosis</string>
+    <string name="Treatment">Treatment</string>
+    <string name="Images">Images</string>
+    <string name="MS_Relapes">MS Relapes\nExacerbation</string>
+    <string name="Labs">Labs</string>
+    <string name="MS_Profile">MS Profile</string>
+    <string name="MS_Resources">MS\nResources</string>
+    <string name="MS_Resources_leftMenu">MS Resources</string>
+    <string name="About_Ms">About Ms</string>
+    <string name="Injection_Tracker">Injection\nTracker</string>
+    <string name="Injection_Tracker_leftMenu">Injection Tracker</string>
+    <string name="Symptoms">Symptoms</string>
+    <!-- mstracker layout end -->
+
+
+    <!-- bottom_menu layout start -->
+    <string name="Future_Appointment">Future\nAppointment</string>
+    <string name="Settings">Settings</string>
+    <string name="Today_Medication">Today\'s\nMedication</string>
+    <string name="Home">Home</string>
+    <!-- bottom_menu layout end -->
+
+
+    <!-- Top Layout Title start -->
+    <string name="scheduleMenuTile">Schedule</string>
+    <string name="scheduleAppointmentMenuTitle">Appointments</string>
+    <string name="addScheduleAppointmentMenuTitle">New Appointments</string>
+    <!-- Top Layout Title end -->
+
+
+    <!-- add shedule appointment Form Field start -->
+    <string name="drName">Dr Name</string>
+    <string name="dateTime">Date and Time</string>
+    <string name="reminder">Reminder</string>
+    <string name="staffName">Staff Name</string>
+    <string name="contectInfo">Contect Info</string>
+    <!-- add shedule appointment Form Field end -->
+
+
+    <!-- Ttreatment Drug information Form Field start -->
+    <string name="tvDrugName">Medication Name/Drug Name </string>
+    <string name="tvDosage">Dosage </string>
+    <string name="tvIndication">Indication </string>
+    <string name="tvReminder">Reminder</string>
+    <string name="tvStartDate">Start Date</string>
+    <string name="tvMoreInfo">More Information</string>
+    <string name="tvEndDate">End Date</string>
+    <!-- Ttreatment Drug information  Form Field end -->
+
+
+    <!-- Diagnose information  Form Field start -->
+    <string name="tvDateDiagnose">Date Diagnose</string>
+    <string name="tvPlaceDiagnose">Place Diagnose</string>
+    <string name="tvImaging">Imaging \/ Labs done</string>
+
+    <!-- Diagnose information information  Form Field end -->
+
+
+    <!-- add Images report Form Field start -->
+    <string name="whenDone">When it was Done?</string>
+    <string name="whatReason">What was the reason?</string>
+    <string name="result">Result?</string>
+    <string name="where">Where?</string>
+    <string name="whoOrderd">Who order it?</string>
+    <string name="otherInformation">Other information?</string>
+    <string name="haveRecord">Do you have record?</string>
+
+    <!-- add Images report  Form Field  end -->
+
+
+    <!-- Treatment medication Option list Start -->
+
+    <string-array name="medicationOptionList">
+        <item>Current Treatment</item>
+        <item>Previous Treatment</item>
+        <item>More information</item>
+    </string-array>
+    <!-- Treatment medication Option list End -->
+
+
+    <!-- Other Messages Start -->
+
+    <string name="msgLoadingWebservice">Loading...</string>
+    <string name="msgEmptyField">Please fill the fields before saving.</string>
+    <string name="msgError">There is an error accour during the process- please try again later</string>
+    <string name="msgNetWorkError">No network found.</string>
+    <string name="msgUpdating">Updating...</string>
+    <string name="msgApointmentInsert">Appointment inserted</string>
+    <string name="msgDiagnoseInsert">New Diagnos inserted</string>
+    <string name="msgMedicationInsert">New Medication inserted</string>
+    <string name="msgMedicationUpdate">Medication Updated</string>
+    <string name="msgDiagnoseUpdate"> Diagnose Updated</string>
+    <string name="msgApointmentUpdate">Appointment Updated</string>
+    <string name="msgInvalidEmail">Invalid email address</string>
+    <string name="msgRegisterErrorTitle">Error in registration</string>
+    <string name="msgRegisterSuccessTitle">Registered Successfully</string>
+    <string name="msgRegisterSuccess">Please check your email - we have sent you a confirmation link.</string>
+    <string name="msgAlreadyRegister">This email is already registered please choose another one.</string>
+    <string name="msgErrorLogin">Invalid email or password</string>
+    <string name="msgErrorPassworLength">Password too short - must be at least 6 characters</string>
+    <string name="msgErrorPassworMismatch">The password and confirmation do not match</string>
+    <string name="msgConnectionErrorTitle">Internet connection error</string>
+    <string name="msgConnectionError">Internet connection too slow or no network found</string>
+    <string name="msgNoIfnormation">More information not avialable.</string>
+    <!-- Other Messages  end -->
+
+    <string name="txtImages">Images</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="tvSelectImage">Select an image to upload</string>
+    <string name="txtLabs">Labs</string>
+    <string name="txtNoRecordFound">txtNoRecordFound</string>
+
+    <!-- injection trcaker -->
+    <string name="txtInjectionTracker">Injection Tracker </string>
+    <string name="txtLeftArm">Left Arm </string>
+    <string name="txtRightArm">Right Arm </string>
+    <string name="txtRightAbdomen">Right Abdomen </string>
+    <string name="txtLeftAbdomen">Left Abdomen </string>
+    <string name="txtLeftThigh">Left Thigh </string>
+    <string name="txtRightThigh">Right Thigh </string>
+    <string name="txtLeftBuutock">Left Buutock </string>
+    <string name="txtRightBuutock">Right Buutock </string>
+    <string name="txtDrugName">Drug Name </string>
+    <string name="txtDateTime">Date &amp; Time</string>
+
+    <!-- injection trcaker End -->
+    <!-- AboutMS -->
+
+    <string name="txtAboutms">About MS</string>
+    <string name="aboutText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+        PageMaker including versions of Lorem Ipsum.\n\n
+        Lorem Ipsum is simply dummy text of the printing and 
+        typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+        including versions of Lorem Ipsum.</string>
+    <!-- AboutMS End -->
+    <!-- MSProfile -->
+    <string name="txtMSProfile">MS Profile</string>
+
+    <string-array name="msprofile_list">
+        <item>Demographics</item>
+        <item>Insurance</item>
+        <item>Past Medical History</item>
+        <item>Past Hospitalization, Surgical History</item>
+        <item>Family History</item>
+        <item>Social History</item>
+        <item>Immunization History</item>
+    </string-array>
+    <!-- MSProfile End -->
+
+</resources>

@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlInj_arms"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inj_arms_height"
+            android:background="@drawable/inj_arms_dim"
+            android:gravity="bottom"
+            android:padding="@dimen/Inj_padding" >
+
+            <Button
+                android:id="@+id/btnRightArm"
+                android:layout_width="@dimen/btnInj_width"
+                android:layout_height="@dimen/btnInj_height"
+                android:background="#D8B8B8"
+                android:gravity="center"
+                android:padding="@dimen/btnInj_padding"
+                android:text="@string/txtRightArm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnInj_textSize" />
+
+            <Button
+                android:id="@+id/btnLeftArm"
+                android:layout_width="@dimen/btnInj_width"
+                android:layout_height="@dimen/btnInj_height"
+                android:layout_alignParentRight="true"
+                android:background="#1A6300"
+                android:gravity="center"
+                android:padding="@dimen/btnInj_padding"
+                android:text="@string/txtLeftArm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnInj_textSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlInj_abdomen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inj_abdomen_height"
+            android:background="@drawable/inj_abdomen_dim"
+            android:gravity="center"
+            android:padding="@dimen/Inj_padding" >
+
+            <Button
+                android:id="@+id/btnRightAbdomen"
+                android:layout_width="@dimen/btnInj_width"
+                android:layout_height="@dimen/btnInj_height"
+                android:background="#95CDC8B8"
+                android:gravity="center"
+                android:padding="@dimen/btnInj_padding"
+                android:text="@string/txtRightAbdomen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnInj_textSize" />
+
+            <Button
+                android:id="@+id/btnLeftAbdomen"
+                android:layout_width="@dimen/btnInj_width"
+                android:layout_height="@dimen/btnInj_height"
+                android:layout_alignParentRight="true"
+                android:background="#95B8BAD0"
+                android:gravity="center"
+                android:padding="@dimen/btnInj_padding"
+                android:text="@string/txtLeftAbdomen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnInj_textSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlInj_thigh"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inj_thigh_height"
+            android:background="@drawable/inj_thigh_dim"
+            android:gravity="center"
+            android:padding="@dimen/Inj_padding" >
+
+            <Button
+                android:id="@+id/btnRightThigh"
+                android:layout_width="@dimen/btnInj_width"
+                android:layout_height="@dimen/btnInj_height"
+                android:background="#941C00"
+                android:gravity="center"
+                android:padding="@dimen/btnInj_padding"
+                android:text="@string/txtRightThigh"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnInj_textSize" />
+
+            <Button
+                android:id="@+id/btnLeftThigh"
+                android:layout_width="@dimen/btnInj_width"
+                android:layout_height="@dimen/btnInj_height"
+                android:layout_alignParentRight="true"
+                android:background="#D4B8CC"
+                android:gravity="center"
+                android:padding="@dimen/btnInj_padding"
+                android:text="@string/txtLeftThigh"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnInj_textSize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seprator_height"
+        android:background="@color/black" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#E7E3E7"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlInj_back"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inj_thigh_height"
+            android:background="@drawable/inj_back_dim"
+            android:gravity="center"
+            android:padding="@dimen/Inj_padding" >
+
+            <Button
+                android:id="@+id/btnLeftBack"
+                android:layout_width="@dimen/btnInj_width"
+                android:layout_height="@dimen/btnInj_height"
+                android:background="#ABBFC1"
+                android:gravity="center"
+                android:padding="@dimen/btnInj_padding"
+                android:text="@string/txtLeftBuutock"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnInj_textSize" />
+
+            <Button
+                android:id="@+id/btnRightBack"
+                android:layout_width="@dimen/btnInj_width"
+                android:layout_height="@dimen/btnInj_height"
+                android:layout_alignParentRight="true"
+                android:background="#BDAAC1"
+                android:gravity="center"
+                android:padding="@dimen/btnInj_padding"
+                android:text="@string/txtRightBuutock"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btnInj_textSize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

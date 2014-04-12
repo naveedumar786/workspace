@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topMenu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f8f8f8" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/backbutton" />
+
+        <TextView
+            android:id="@+id/topMenuTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnSave"
+            android:layout_toRightOf="@+id/btnBack"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/addScheduleAppointmentMenuTitle"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/save_button" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/topMenuBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/topMenu"
+        android:background="#bbbbbb" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomMenu"
+        android:layout_below="@+id/topMenuBorder" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvWhenDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/whenDone" />
+
+            <EditText
+                android:id="@+id/etWhenDone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvWhenDone"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="datetime"
+                android:padding="3dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvWhatReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etWhenDone"
+                android:layout_marginTop="8dp"
+                android:text="@string/whatReason" />
+
+            <EditText
+                android:id="@+id/etWhatReason"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvWhatReason"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etWhatReason"
+                android:layout_marginTop="8dp"
+                android:text="@string/result" />
+
+            <EditText
+                android:id="@+id/etResult"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvResult"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvWhere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etResult"
+                android:layout_marginTop="8dp"
+                android:text="@string/where" />
+
+            <EditText
+                android:id="@+id/etWhere"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvWhere"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvwhoOrderd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etWhere"
+                android:layout_marginTop="8dp"
+                android:text="@string/whoOrderd" />
+
+            <EditText
+                android:id="@+id/etWhoOrderd"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvwhoOrderd"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvOtherInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etWhoOrderd"
+                android:layout_marginTop="8dp"
+                android:text="@string/otherInformation" />
+
+            <EditText
+                android:id="@+id/etOtherInformation"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvOtherInformation"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvHaveRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etOtherInformation"
+                android:layout_marginTop="8dp"
+                android:text="@string/haveRecord" />
+
+            <EditText
+                android:id="@+id/etHaveRecord"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvHaveRecord"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- Bottom menu start -->
+
+    <include
+        android:id="@+id/bottomMenu"
+        layout="@layout/bottom_menu" />
+    <!-- Bottom menu end -->
+
+</RelativeLayout>

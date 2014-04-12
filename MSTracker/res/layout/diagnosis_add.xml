@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/fromsHeader"
+        layout="@layout/forms_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomMenu"
+        android:layout_below="@+id/fromsHeader" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvDrName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/drName" />
+
+            <EditText
+                android:id="@+id/etDrName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvDrName"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+            <!-- Date time picker -->
+
+            <TextView
+                android:id="@+id/tvDateDiagnose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDrName"
+                android:layout_marginTop="8dp"
+                android:text="@string/tvDateDiagnose" />
+
+            <EditText
+                android:id="@+id/etDateDiagnose"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvDateDiagnose"
+                android:background="@drawable/rounded_edittext"
+                android:padding="3dp"
+                android:singleLine="true" >
+            </EditText>
+            <!-- Reminder -->
+
+            <TextView
+                android:id="@+id/tvPlaceDiagnose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDateDiagnose"
+                android:layout_marginTop="8dp"
+                android:text="@string/tvPlaceDiagnose" />
+
+            <EditText
+                android:id="@+id/etPlaceDiagnose"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvPlaceDiagnose"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:padding="3dp" >
+            </EditText>
+            <!-- Reminder -->
+
+            <TextView
+                android:id="@+id/tvImaging"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPlaceDiagnose"
+                android:layout_marginTop="8dp"
+                android:text="@string/tvImaging" />
+
+            <CheckBox
+                android:id="@+id/cbImaging"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvImaging"
+                android:button="@drawable/checkbox_imaging" >
+            </CheckBox>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottomMenu"
+        layout="@layout/bottom_menu" />
+
+</RelativeLayout>

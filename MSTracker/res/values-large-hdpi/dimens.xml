@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="vlaues_folder_name">Large-hdpi</string>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- ********* Home screen dimen *************** -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="heade_btn_Height">30dp</dimen>
+    <dimen name="home_btn_Height">190dp</dimen>
+    <dimen name="home_btn_Width">190dp</dimen>
+    <!-- text siezes -->
+    <dimen name="home_tv_textsize">24sp</dimen>
+    <!-- ********* Home screen dimen *************** -->
+
+
+    <!-- injection tracker -->
+    <dimen name="seprator_height">2dp</dimen>
+    <!-- <dimen name="inj_width">320dp</dimen> -->
+    <dimen name="inj_arms_height">250dp</dimen>
+    <dimen name="inj_abdomen_height">180dp</dimen>
+    <dimen name="inj_thigh_height">160dp</dimen>
+    <dimen name="btnInj_width">110dp</dimen>
+    <dimen name="btnInj_height">80dp</dimen>
+    <dimen name="btnInj_textSize">19sp</dimen>
+    <dimen name="btnInj_padding">4dp</dimen>
+    <dimen name="Inj_padding">20dp</dimen>
+
+    <!-- injection tracker end -->
+
+</resources>
